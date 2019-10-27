@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- saved from url=(0351)https://pippio.com/api/sync?pid=1391&ref=https%3A%2F%2Ffangohr.github.io%2Fblog%2Finstallation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html&it=1&iv=csuc1hv2m5k3r0&it=4&iv=3251d80245fc36826107d5b7dd527343&it=4&iv=fa7c63400118de01fc1e3545886f567e701fa9a1&it=4&iv=17bec2d46cb73944bbfc61f190df40b5a73bd641049f72894dd9088d2300a8dd -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><meta name="referrer" content="no-referrer"><script>
+		var f = function () {
+	function loadChains(chains, limit, onChainDone) {
+    function newImageLoader(url) {
+        return function () {
+            var e = new Image();
+            addListeners(e);
+            e.src = url;
+        };
+    }
+
+    function newScriptLoader(url) {
+        return function () {
+            var e = document.createElement('script');
+            e.type = 'text/javascript';
+            e.async = true;
+            addListeners(e);
+            e.src = url;
+            document.head.appendChild(e);
+        };
+    }
+
+    function newIframeLoader(url) {
+        return function () {
+            var e = document.createElement('iframe');
+            e.style.display = 'none';
+            e.width = 1;
+            e.height = 1;
+            addListeners(e);
+            e.src = url;
+            document.body.appendChild(e);
+        };
+    }
+
+    function addListeners(e) {
+        addLoadErrorListeners(e, loadNext);
+        if (typeof onChainDone === 'function') {
+            addLoadErrorListeners(e, onChainDone);
+        }
+    }
+
+    function addLoadErrorListeners(e, listener) {
+        if (typeof e.addEventListener === 'function') {
+            e.addEventListener('load', listener, false);
+            e.addEventListener('error', listener, false);
+        } else if (typeof e.attachEvent === 'function') {
+            e.attachEvent('onload', listener);
+            e.attachEvent('onerror', listener);
+        }
+    }
+
+    function loadNext() {
+        var next = loaders.shift();
+        if (typeof next === "function") {
+            setTimeout(next);
+        }
+    }
+
+    var loaders = chains.reduce(function (acc, value) {
+        var mode = value[0];
+        var url = value[1];
+
+        switch (mode) {
+            case 'image':
+                acc.push(newImageLoader(url));
+                break;
+            case 'script':
+                acc.push(newScriptLoader(url));
+                break;
+            case 'iframe':
+                acc.push(newIframeLoader(url));
+                break;
+        }
+        return acc;
+    }, []);
+
+    for (var i = 0; i < limit; i++) {
+        loadNext();
+    }
+}
+
+	var chains = [];
+	chains.push(['image', 'https://e.dlx.addthis.com/e/a-1137/s-7715?ret=img&na_em=4b335a7aa545eeb49a5fbc2573b7a64bd078dd4f&na_em=fa7c63400118de01fc1e3545886f567e701fa9a1&na_em=033c9db4e196e7906edc79d4e80821a7a22e8a2c&na_ci=GU7fyyS-vTi1sVMy5oLxtsigpw&na_sp=1017']);
+	chains.push(['image', 'https://ei.rlcdn.com/448046.gif?n=1&partner_site_id=1017&m=3251d80245fc36826107d5b7dd527343&s=fa7c63400118de01fc1e3545886f567e701fa9a1&s256=17bec2d46cb73944bbfc61f190df40b5a73bd641049f72894dd9088d2300a8dd']);
+	chains.push(['image', 'https://tr.snapchat.com/cs/r?u_hem=db8a07d3a0a3c7613fdeeeabf60385fe93630fad64696e2630b5123913cc4878']);
+	chains.push(['image', 'https://ib.adnxs.com/getuid?https%3A%2F%2Fs.cpx.to%2Fca.png%3Fref%3Dhttps%253A%252F%252Ffangohr.github.io%252Fblog%252Finstallation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html%26pid%3D11718%26url%3Dhttps%253A%252F%252Ffangohr.github.io%252Fblog%252Finstallation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html%26adnxs_uid%3D%24UID']);
+	chains.push(['image', 'https://rc.rlcdn.com/456809.gif?n=2']);
+	chains.push(['image', 'https://rc.rlcdn.com/456809.gif?n=7']);
+	chains.push(['image', 'https://rc.rlcdn.com/456809.gif?n=3']);
+	chains.push(['image', 'https://rc.rlcdn.com/456809.gif?n=9']);
+	chains.push(['image', 'https://rc.rlcdn.com/456809.gif?n=4']);
+	chains.push(['image', 'https://rc.rlcdn.com/456809.gif?n=10']);
+	chains.push(['image', 'https://rc.rlcdn.com/456809.gif?n=11']);
+	chains.push(['image', 'https://rc.rlcdn.com/456809.gif?n=5']);
+	chains.push(['image', 'https://rc.rlcdn.com/456809.gif?n=8']);
+	chains.push(['image', 'https://rc.rlcdn.com/456809.gif?n=6']);
+	chains.push(['image', 'https://idsync.rlcdn.com/394479.gif?partner_uid=GU7fyyS-vTi1sVMy5oLxtsigpw']);
+
+	loadChains(chains, 10, (typeof onDone === "function") ? onDone : null);
+		};
+
+		if (document.body) { f(); } else { document.addEventListener('DOMContentLoaded', f); }
+	</script>
+</head><body></body></html>

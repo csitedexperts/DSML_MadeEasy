@@ -1,0 +1,13 @@
+Performance Category Code
+
+1 Bad
+2 Low
+3 Medium
+4 Good
+5 Excellent
+
+
+Gender Category Code
+
+0 Female
+1 Male

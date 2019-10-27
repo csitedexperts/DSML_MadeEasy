@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<!-- saved from url=(0126)http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html -->
+<html class="js video maskImage placeholder gr__southampton_ac_uk" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Installation of Python, Spyder, Numpy, Sympy, Scipy, Pytest, Matplotlib via Anaconda (2016) — Computational Science and Data Science</title>
+  <meta name="author" content="">
+
+
+    <script type="text/javascript" async="" src="./Installation of Python, Spyder, Numpy, Sympy, Scipy, Pytest, Matplotlib via Anaconda (2016) — Computational Science and Data Science_files/embed.js.download"></script><script type="text/javascript" async="" src="./Installation of Python, Spyder, Numpy, Sympy, Scipy, Pytest, Matplotlib via Anaconda (2016) — Computational Science and Data Science_files/widgets.js.download"></script><link rel="preload" as="style" href="https://c.disquscdn.com/next/embed/styles/lounge.694ea7181ea49f1ce306dfc00c532f53.css"><link rel="preload" as="script" href="https://c.disquscdn.com/next/embed/common.bundle.2b6bb3725200b8d992a8cb9c288952d3.js"><link rel="preload" as="script" href="https://c.disquscdn.com/next/embed/lounge.bundle.c880931392854f5b024f43e1706c6562.js"><link rel="preload" as="script" href="https://disqus.com/next/config.js"><script charset="utf-8" src="./Installation of Python, Spyder, Numpy, Sympy, Scipy, Pytest, Matplotlib via Anaconda (2016) — Computational Science and Data Science_files/button.dd024c345fc26f7c7a8d99.download"></script></head><body data-gr-c-s-loaded="true">Testing, one, two
+
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+
+
+    <link href="https://fangohr.github.io/blog/favicon.png" rel="icon">
+
+
+
+  <link href="./Installation of Python, Spyder, Numpy, Sympy, Scipy, Pytest, Matplotlib via Anaconda (2016) — Computational Science and Data Science_files/main.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+  <link href="./Installation of Python, Spyder, Numpy, Sympy, Scipy, Pytest, Matplotlib via Anaconda (2016) — Computational Science and Data Science_files/css" rel="stylesheet" type="text/css">
+  <link href="./Installation of Python, Spyder, Numpy, Sympy, Scipy, Pytest, Matplotlib via Anaconda (2016) — Computational Science and Data Science_files/css(1)" rel="stylesheet" type="text/css">
+
+
+
+
+
+  <header role="banner"><hgroup>
+  <h1><a href="https://fangohr.github.io/blog/">Computational Science and Data Science</a></h1>
+    <h2>Hans Fangohr</h2>
+</hgroup></header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+</ul>
+
+
+<ul class="main-navigation">
+    <li><a href="http://www.southampton.ac.uk/~fangohr/blog/about.html">About</a></li>
+    <li><a href="http://www.southampton.ac.uk/~fangohr/blog/archives.html">Archive</a></li>
+    <li><a href="http://www.southampton.ac.uk/~fangohr/blog/tags.html">Tags</a></li>
+      <li>
+        <a href="https://fangohr.github.io/blog/category-misc.html">Misc</a>
+      </li>
+      <li>
+        <a href="https://fangohr.github.io/blog/category-ngcm.html">Ngcm</a>
+      </li>
+      <li>
+        <a href="https://fangohr.github.io/blog/category-productivity.html">Productivity</a>
+      </li>
+      <li class="active">
+        <a href="https://fangohr.github.io/blog/category-python.html">Python</a>
+      </li>
+      <li>
+        <a href="https://fangohr.github.io/blog/category-research.html">Research</a>
+      </li>
+</ul></nav>
+  <div id="main">
+    <div id="content">
+<div>
+  <article class="hentry" role="article">
+<header>
+      <h1 class="entry-title">Installation of Python, Spyder, Numpy, Sympy, Scipy, Pytest, Matplotlib via Anaconda (2016)</h1>
+    <p class="meta">
+<time datetime="2016-09-14T00:00:00+01:00" pubdate="">Wed 14 September 2016</time>    </p>
+</header>
+
+  <div class="entry-content"><hr class="docutils">
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#introduction" id="id1">Introduction</a></li>
+<li><a class="reference internal" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#what-is-what-python-python-packages-spyder-anaconda" id="id2">What is what: Python, Python packages, Spyder, Anaconda</a><ul>
+<li><a class="reference internal" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#python" id="id3">Python</a></li>
+<li><a class="reference internal" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#python-packages" id="id4">Python packages</a></li>
+<li><a class="reference internal" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#spyder" id="id5">Spyder</a></li>
+<li><a class="reference internal" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#anaconda" id="id6">Anaconda</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#installation" id="id7">Installation</a></li>
+<li><a class="reference internal" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#test-your-installation" id="id8">Test your installation</a><ul>
+<li><a class="reference internal" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#running-the-tests-with-spyder" id="id9">Running the tests with Spyder</a></li>
+<li><a class="reference internal" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#running-the-tests-from-the-console" id="id10">Running the tests from the console</a></li>
+<li><a class="reference internal" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#missing-packages" id="id11">Missing packages</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#updating-packages-in-the-anaconda-installation" id="id12">Updating packages in the Anaconda installation</a></li>
+<li><a class="reference internal" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#related-tutorials" id="id13">Related tutorials</a></li>
+</ul>
+</div>
+<div class="section" id="introduction">
+<h2><a class="toc-backref" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#id1">Introduction</a></h2>
+<p>These notes are provided primarily for students at the
+<a class="reference external" href="http://www.southampton.ac.uk/">University of Southampton</a> (UK) in
+undergraduate, postgraduate and <a class="reference external" href="http://ngcm.soton.ac.uk/">doctoral</a>
+studies to help them install Python 3 on their own
+computers should they wish to do so, and to support their learning of
+programming and computing, and subsequently their studies, in
+particular in engineering, computer science and natural sciences.</p>
+<p><strong>This is the most recent version</strong> of the installation
+instructions for the academic year 2016/2017.
+(An older Version from 2014/2013, where we have used Python 2 (!) is available <a class="reference external" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda-2014.html">here</a>.)</p>
+<p>In short, we suggest to use the
+<a class="reference external" href="https://store.continuum.io/cshop/anaconda/">Anaconda Python distribution</a>.</p>
+<p>By the nature of the information provided, the information is likely
+to become partially outdated over time. For reference: this
+mini-introduction was written in September 2016, where Anaconda 4.1
+was available, and Python 3.5 is the default Python provided.</p>
+</div>
+<div class="section" id="what-is-what-python-python-packages-spyder-anaconda">
+<h2><a class="toc-backref" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#id2">What is what: Python, Python packages, Spyder, Anaconda</a></h2>
+<div class="section" id="python">
+<h3><a class="toc-backref" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#id3">Python</a></h3>
+<p>Python is</p>
+<ul>
+<li><p class="first">a <em>programming language</em> in which we write computer programs. These programs would be stored in text files that have the ending <tt class="docutils literal">.py</tt>, for example <tt class="docutils literal">hello.py</tt> which may contain:</p>
+<pre class="literal-block">print("Hello World")
+</pre>
+</li>
+</ul>
+<p>Python is also</p>
+<ul>
+<li><p class="first">a <em>computer program</em> (the technical term is ''interpreter'') which executes Python programs, such as <tt class="docutils literal">hello.py</tt>. On windows, the Python interpeter is called <tt class="docutils literal">python.exe</tt> and  from a command window we could execute the <tt class="docutils literal">hello.py</tt> program by typing:</p>
+<pre class="literal-block">python.exe hello.py
+</pre>
+<p>On Linux and OS X operating systems, the Python interpreter program
+is called <tt class="docutils literal">Python</tt>, so we can run the program <tt class="docutils literal">hello.py</tt> as:</p>
+<pre class="literal-block">python hello.py
+</pre>
+<p>(This also works on Windows as the operating system does not need
+the <tt class="docutils literal">.exe</tt> extension.)</p>
+</li>
+</ul>
+</div>
+<div class="section" id="python-packages">
+<h3><a class="toc-backref" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#id4">Python packages</a></h3>
+<p>For scientific computing and computational modelling, we need
+additional libraries (so called <em>packages</em>) that are not part of the
+Python standard library. These allow us, for example, to create plots,
+operate on matricies, and use specialised numerical methods</p>
+<p>The packages we generally need are</p>
+<ul class="simple">
+<li><tt class="docutils literal">numpy</tt> (NUMeric Python): matrices and linear algebra</li>
+<li><tt class="docutils literal">scipy</tt> (SCIentific Python): many numerical routines</li>
+<li><tt class="docutils literal">matplotlib</tt>: (PLOTting LIBrary) creating plots of data</li>
+</ul>
+<p>We also need for our teaching:</p>
+<ul class="simple">
+<li><tt class="docutils literal">sympy</tt> (SYMbolic Python): symbolic computation</li>
+<li><tt class="docutils literal">pytest</tt> (Python TESTing): a code testing framework</li>
+</ul>
+<!-- comment:
+A package that allows to compute with numbers that have SI units
+attached is
+
+* ``physics`` : `computing with physical entities
+  <physical-quantities-numerical-value-with-units-in-Python.html>`__ (numbers and units) -->
+<p>The packages <tt class="docutils literal">numpy</tt>, <tt class="docutils literal">scipy</tt> and <tt class="docutils literal">matplotlib</tt> are building
+stones of computational work with Python and extremely widely spread.</p>
+<p><tt class="docutils literal">Sympy</tt> has a special role as it allows <em>SYMbolic</em> computation
+rather than numerical computation.</p>
+<p>The <tt class="docutils literal">pytest</tt> package and tool supports regression testing and test
+driven development -- this is generally important, and particularly so
+in best practice software engineering for computational studies and
+research.</p>
+<!-- comment:
+
+The ``physics`` package is one
+of several possibilities to carry out calculations where in addition
+to the numerical value of an entity, we also carry along and process
+the units of the entity. -->
+</div>
+<div class="section" id="spyder">
+<h3><a class="toc-backref" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#id5">Spyder</a></h3>
+<p>Spyder (<a class="reference external" href="https://www.spyder-ide.org/">home page</a>) is s a powerful
+interactive development environment for the Python language with
+advanced editing, interactive testing, debugging and introspection
+features. There is a separate blog entry providing a
+<a class="reference external" href="http://www.southampton.ac.uk/~fangohr/blog/spyder-the-scientific-python-development-environment.html">summary of key features of Spyder</a>,
+which is also available as Spyder's tutorial from inside Spyder
+(<tt class="docutils literal">Help</tt> -&gt; <tt class="docutils literal">Spyder tutorial</tt>).</p>
+<p>The name SPYDER derives from "Scientific PYthon Development EnviRonment" (SPYDER).</p>
+<p>We will use it as the main environment to learn about Python,
+programming and computational science and engineering.</p>
+<p>Useful features include</p>
+<ul class="simple">
+<li>provision of the IPython (Qt) console as an interactive prompt, which can display plots inline</li>
+<li>ability to execute snippets of code from the editor in the console</li>
+<li>continuous parsing of files in editor, and provision of visual warnings about potential errors</li>
+<li>step-by-step execution</li>
+<li>variable explorer</li>
+</ul>
+</div>
+<div class="section" id="anaconda">
+<h3><a class="toc-backref" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#id6">Anaconda</a></h3>
+<p><a class="reference external" href="http://docs.continuum.io/anaconda/">Anaconda</a> is one of several
+<em>Python distributions</em>. Python distributions provide the Python
+interpreter, together with a list of Python packages and sometimes
+other related tools, such as editors. The Anaconda Python distribution
+was easiest to install on the University of Southampton student
+computers, but other distributions provide similar functionality.</p>
+<p>The <a class="reference external" href="https://docs.continuum.io/anaconda/pkg-docs.html">packages provide by the Anaconda Python distribution</a> includes all of those
+that we need, and for that reason we suggest to use Anaconda here.</p>
+<p>A key part of the Anaconda Python distribution is <a class="reference internal" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#spyder">Spyder</a>, an
+interactive development environment for Python, including an editor.</p>
+</div>
+</div>
+<div class="section" id="installation">
+<h2><a class="toc-backref" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#id7">Installation</a></h2>
+<p>In general, the installation of the Python interpreter is fairly straightforward, but
+installation of additional packages can be a bit tedious.</p>
+<p>Instead of doing this manually, we suggest to install the <a class="reference internal" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#anaconda">Anaconda</a>
+Python distribution using <a class="reference external" href="http://docs.continuum.io/anaconda/install.html">these installation instructions</a>, which provides the
+Python interpreter itself and all packages we need.</p>
+<p>The Anaconda Python distribution is available for <a class="reference external" href="http://continuum.io/downloads">download</a> for
+Windows, OS X and Linux operating systems (and free).</p>
+<p>For Windows and OS X you are given a choice whether to download the
+graphical installer or the next based installer. If you don't know
+what the terminal (OS X) or command prompt (Windows) is, then you are
+better advised to choose the graphical version. You want to install
+the default suggestion (Python 3.5, 64bit).</p>
+<p>Download the installer, start it, and follow instructions. Accept
+default values as suggested.</p>
+<p>(If you are using Linux and you are happy to use the package manager
+of your distribution -- you will know who you are --, then you may be
+better advised to install the required packages indivdually rather
+than installing the whole Anaconda distribution.)</p>
+</div>
+<div class="section" id="test-your-installation">
+<h2><a class="toc-backref" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#id8">Test your installation</a></h2>
+<p>Once you have installed <a class="reference internal" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#anaconda">Anaconda</a> or the Python distribution of your
+choice, you can <a class="reference external" href="http://www.southampton.ac.uk/~fangohr/blog/code/python/soton-test-python-installation.py">download this testing programme</a> and
+execute it.</p>
+<div class="section" id="running-the-tests-with-spyder">
+<h3><a class="toc-backref" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#id9">Running the tests with Spyder</a></h3>
+<ol class="arabic">
+<li><p class="first">Start Spyder</p>
+</li>
+<li><p class="first">Download the file
+<a class="reference external" href="http://www.southampton.ac.uk/~fangohr/blog/code/python/soton-test-python-installation.py">http://www.soton.ac.uk/~fangohr/blog/code/python/soton-test-python-installation.py</a></p>
+</li>
+<li><p class="first">Open the file in Spyder via <tt class="docutils literal">File</tt> -&gt; <tt class="docutils literal">Open</tt></p>
+</li>
+<li><p class="first">The execute the file via <tt class="docutils literal">Run</tt> -&gt; <tt class="docutils literal">Run</tt>.</p>
+<p>If you get a pop up window, you can accept the default settings and
+click on the <tt class="docutils literal">run</tt> button.</p>
+</li>
+</ol>
+<p>You should see output similar to this in the lower right window of
+spyder (you may also see a plot appearing):</p>
+<pre class="literal-block">Running using Python 3.5.1 |Anaconda 4.0.0 (x86_64)| (default, Dec  7 2015, 11:24:55)
+[GCC 4.2.1 (Apple Inc. build 5577)]
+Testing Python version-&gt; py3.5 OK
+Testing numpy...      -&gt; numpy OK
+Testing scipy ...     -&gt; scipy OK
+Testing matplotlib... -&gt; pylab OK
+Testing sympy         -&gt; sympy OK
+Testing pytest        -&gt; pytest OK
+</pre>
+<p>If the test program produces these outputs, there is a very good
+chance that Python and the six listed packages are installed
+correctly.</p>
+</div>
+<div class="section" id="running-the-tests-from-the-console">
+<h3><a class="toc-backref" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#id10">Running the tests from the console</a></h3>
+<ol class="arabic">
+<li><p class="first">Open a console:</p>
+<ul class="simple">
+<li>Windows: type <tt class="docutils literal">cmd</tt> in the search box</li>
+<li>Mac OS X: Start the <tt class="docutils literal">Terminal</tt> application that is located in
+the <tt class="docutils literal">Utilities</tt> folder in <tt class="docutils literal">Applications</tt></li>
+<li>Linux: start one of the shells you have available, or an xterm or
+so.</li>
+</ul>
+</li>
+<li><p class="first">Download the file
+<a class="reference external" href="http://www.southampton.ac.uk/~fangohr/blog/code/python/soton-test-python-installation.py">http://www.soton.ac.uk/~fangohr/blog/code/python/soton-test-python-installation.py</a> onto your machine.</p>
+</li>
+<li><p class="first">Change directory into the folder you have downloaded the file to,
+and type:</p>
+<pre class="literal-block">python soton-test-python-installation.py
+</pre>
+</li>
+</ol>
+<p>If all the tests pass, you should see output similar to this:</p>
+<pre class="literal-block">Running using Python 3.5.1 |Anaconda 4.0.0 (x86_64)| (default, Dec  7 2015, 11:24:55)
+[GCC 4.2.1 (Apple Inc. build 5577)]
+Testing Python version-&gt; py3.5 OK
+Testing numpy...      -&gt; numpy OK
+Testing scipy ...     -&gt; scipy OK
+Testing matplotlib... -&gt; pylab OK
+Testing sympy         -&gt; sympy OK
+Testing pytest        -&gt; pytest OK
+</pre>
+</div>
+<div class="section" id="missing-packages">
+<h3><a class="toc-backref" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#id11">Missing packages</a></h3>
+<p>If you install Python in other ways than through the <a class="reference internal" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#anaconda">Anaconda</a>
+distribution and, for example, you have only installed the <tt class="docutils literal">numpy</tt>,
+<tt class="docutils literal">scipy</tt> and <tt class="docutils literal">matplotlib</tt> package, the program's output would be:</p>
+<pre class="literal-block">Testing numpy...      -&gt; numpy OK
+Testing scipy...      -&gt; scipy OK
+Testing matplotlib... -&gt; pylab OK
+Testing sympy...      Could not import 'sympy' -&gt; fail
+Testing pytest...     Could not import 'pytest' -&gt; fail
+</pre>
+</div>
+</div>
+<div class="section" id="updating-packages-in-the-anaconda-installation">
+<h2><a class="toc-backref" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#id12">Updating packages in the Anaconda installation</a></h2>
+<p>To update, for example, spyder and python, follow these steps:</p>
+<ol class="arabic">
+<li><p class="first">Open a terminal (see step 1 in <a class="reference internal" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#running-the-tests-from-the-console">Running the tests from the console</a>)</p>
+</li>
+<li><p class="first">Update the <tt class="docutils literal">conda</tt> program (this manages the updating) by typing
+the  following command into the console:</p>
+<pre class="literal-block">conda update conda
+</pre>
+<p>Confirm updates if asked to do so. More than one package may be
+listed to be updated.</p>
+</li>
+<li><p class="first">Update individual packages, for example <tt class="docutils literal">spyder</tt>:</p>
+<pre class="literal-block">conda update spyder
+</pre>
+<p>Other packages you may want to update include <tt class="docutils literal">ipython</tt>,
+<tt class="docutils literal"><span class="pre">ipython-qtconsole</span></tt> and <tt class="docutils literal"><span class="pre">ipython-notebook</span></tt>. The relevant command would
+be:</p>
+<pre class="literal-block">conda update ipython ipython-qtconsole ipython-notebook
+</pre>
+</li>
+</ol>
+<p>More details on using the conda package management system is available
+in the <a class="reference external" href="http://conda.pydata.org/docs/">conda documentation page</a>.</p>
+</div>
+<div class="section" id="related-tutorials">
+<h2><a class="toc-backref" href="http://www.southampton.ac.uk/~fangohr/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html#id13">Related tutorials</a></h2>
+<p>Update 12 June 2015: If you prefer a video run through of an anaconda installation, check
+<a class="reference external" href="http://holdenweb.blogspot.co.uk/2015/02/how-to-get-almost-all-python-you-might.html">Steve Holden's post from June 2015</a></p>
+</div>
+</div>
+    <footer>
+<p class="meta">
+  <span class="byline author vcard">
+    Posted by <span class="fn">
+        
+    </span>
+  </span>
+<time datetime="2016-09-14T00:00:00+01:00" pubdate="">Wed 14 September 2016</time>  <span class="categories">
+    <a class="category" href="https://fangohr.github.io/blog/category-python.html">Python</a>
+  </span>
+  <span class="categories">
+    <a class="category" href="https://fangohr.github.io/blog/tag-python.html">Python</a>,    <a class="category" href="https://fangohr.github.io/blog/tag-productivity.html">Productivity</a>,    <a class="category" href="https://fangohr.github.io/blog/tag-education.html">Education</a>  </span>
+</p><div class="sharing">
+  <iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 60px; height: 20px;" title="Twitter Tweet Button" src="./Installation of Python, Spyder, Numpy, Sympy, Scipy, Pytest, Matplotlib via Anaconda (2016) — Computational Science and Data Science_files/tweet_button.2e9f365dae390394eb8d.html" data-url="https://fangohr.github.io/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html"></iframe>
+</div>    </footer>
+  </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><iframe id="dsq-app8572" name="dsq-app8572" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="./Installation of Python, Spyder, Numpy, Sympy, Scipy, Pytest, Matplotlib via Anaconda (2016) — Computational Science and Data Science_files/saved_resource.html" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 2449px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe></div>
+  </section>
+</div>
+<aside class="sidebar thirds">
+
+
+    <section class="first odd">
+        <h1>Social</h1>
+        <ul>
+            <li><a href="https://twitter.com/ProfCompMod" target="_blank">ProfCompMod</a></li>
+            <li><a href="https://twitter.com/NGCM_Soton" target="_blank">NGCM_Soton</a></li>
+        </ul>
+    </section>
+    <section class="even">
+        <h1>Blogroll</h1>
+        <ul>
+            <li><a href="http://cmg.soton.ac.uk/" target="_blank">Computational Modelling Group Southampton</a></li>
+            <li><a href="http://www.ngcm.soton.ac.uk/" target="_blank">CDT Next Generation Computational Modelling</a></li>
+            <li><a href="http://xfel.eu/" target="_blank">European XFEL</a></li>
+            <li><a href="https://fangohr.github.io/" target="_blank">Hans Fangohr home page</a></li>
+        </ul>
+    </section>
+
+<section class="odd">
+    <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 230px; height: 20px;" title="Twitter Follow Button" src="./Installation of Python, Spyder, Numpy, Sympy, Scipy, Pytest, Matplotlib via Anaconda (2016) — Computational Science and Data Science_files/follow_button.2e9f365dae390394eb8.html" data-screen-name="ProfCompMod"></iframe>
+</section>
+
+  <section class="first even">
+    <h1>Recent Posts</h1>
+    <ul id="recent_posts">
+      <li class="post">
+          <a href="https://fangohr.github.io/blog/spyder-the-scientific-python-development-environment.html">Spyder: The Scientific Python Development Environment</a>
+      </li>
+      <li class="post">
+          <a href="https://fangohr.github.io/blog/towards-the-european-open-science-cloud.html">Towards the European Open Science Cloud</a>
+      </li>
+      <li class="post">
+          <a href="https://fangohr.github.io/blog/thermal-stability-and-topological-protection-of-skyrmions-in-nanotracks.html">Thermal stability and topological protection of skyrmions in nanotracks</a>
+      </li>
+      <li class="post">
+          <a href="https://fangohr.github.io/blog/the-dvorak-keyboard-what-why-and-really.html">The Dvorak keyboard - what, why and "really?"</a>
+      </li>
+      <li class="post">
+          <a href="https://fangohr.github.io/blog/gamification-of-python-script-execution-in-minecraft.html">Gamification of Python script execution in Minecraft</a>
+      </li>
+    </ul>
+  </section>
+  <section class="odd">
+
+    <h1>Categories</h1>
+    <ul id="recent_posts">
+        <li><a href="https://fangohr.github.io/blog/category-misc.html">Misc</a></li>
+        <li><a href="https://fangohr.github.io/blog/category-ngcm.html">NGCM</a></li>
+        <li><a href="https://fangohr.github.io/blog/category-productivity.html">Productivity</a></li>
+        <li><a href="https://fangohr.github.io/blog/category-python.html">Python</a></li>
+        <li><a href="https://fangohr.github.io/blog/category-research.html">Research</a></li>
+    </ul>
+  </section>
+
+  <section class="even">
+  <h1>Tags</h1>
+    <a href="https://fangohr.github.io/blog/tag-fair.html">FAIR</a>,    <a href="https://fangohr.github.io/blog/tag-open-science.html">Open Science</a>,    <a href="https://fangohr.github.io/blog/tag-publications.html">Publications</a>,    <a href="https://fangohr.github.io/blog/tag-jupyter.html">Jupyter</a>,    <a href="https://fangohr.github.io/blog/tag-vortex-state.html">Vortex State</a>,    <a href="https://fangohr.github.io/blog/tag-simulation.html">Simulation</a>,    <a href="https://fangohr.github.io/blog/tag-units.html">Units</a>,    <a href="https://fangohr.github.io/blog/tag-ngcm.html">NGCM</a>,    <a href="https://fangohr.github.io/blog/tag-education.html">Education</a>,    <a href="https://fangohr.github.io/blog/tag-numerics.html">Numerics</a>,    <a href="https://fangohr.github.io/blog/tag-productivity.html">Productivity</a>,    <a href="https://fangohr.github.io/blog/tag-performance.html">Performance</a>,    <a href="https://fangohr.github.io/blog/tag-software-engineering.html">Software Engineering</a>,    <a href="https://fangohr.github.io/blog/tag-physics.html">Physics</a>,    <a href="https://fangohr.github.io/blog/tag-spintronics.html">Spintronics</a>,    <a href="https://fangohr.github.io/blog/tag-micromagnetics.html">Micromagnetics</a>,    <a href="https://fangohr.github.io/blog/tag-python.html">Python</a>,    <a href="https://fangohr.github.io/blog/tag-outreach.html">Outreach</a>,    <a href="https://fangohr.github.io/blog/tag-ipython.html">IPython</a>,    <a href="https://fangohr.github.io/blog/tag-research.html">Research</a>,    <a href="https://fangohr.github.io/blog/tag-publication.html">Publication</a>,    <a href="https://fangohr.github.io/blog/tag-blog.html">Blog</a>,    <a href="https://fangohr.github.io/blog/tag-better-software.html">Better Software</a>,    <a href="https://fangohr.github.io/blog/tag-skyrmions.html">Skyrmions</a>,    <a href="https://fangohr.github.io/blog/tag-mathematics.html">Mathematics</a>,    <a href="https://fangohr.github.io/blog/tag-reproducibility.html">Reproducibility</a>  </section>
+
+</aside>    <span class="toggle-sidebar"></span></div>
+  </div>
+  <footer role="contentinfo"><p>
+    Copyright ©  2012–2018   —
+  <span class="credit">Powered by <a href="http://getpelican.com/">Pelican</a></span>
+</p></footer>
+  <script async="" src="./Installation of Python, Spyder, Numpy, Sympy, Scipy, Pytest, Matplotlib via Anaconda (2016) — Computational Science and Data Science_files/analytics.js.download"></script><script type="text/javascript" async="" src="./Installation of Python, Spyder, Numpy, Sympy, Scipy, Pytest, Matplotlib via Anaconda (2016) — Computational Science and Data Science_files/ga.js.download"></script><script src="./Installation of Python, Spyder, Numpy, Sympy, Scipy, Pytest, Matplotlib via Anaconda (2016) — Computational Science and Data Science_files/modernizr-2.0.js.download"></script>
+  <script src="./Installation of Python, Spyder, Numpy, Sympy, Scipy, Pytest, Matplotlib via Anaconda (2016) — Computational Science and Data Science_files/ender.js.download"></script>
+  <script src="./Installation of Python, Spyder, Numpy, Sympy, Scipy, Pytest, Matplotlib via Anaconda (2016) — Computational Science and Data Science_files/octopress.js.download" type="text/javascript"></script>
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-45946250-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-45946250-1');
+    ga('send', 'pageview');
+</script>
+  <script type="text/javascript">
+    var disqus_shortname = 'hansfangohr';
+    var disqus_identifier = '/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html';
+    var disqus_url = 'https://fangohr.github.io/blog/installation-of-python-spyder-numpy-sympy-scipy-pytest-matplotlib-via-anaconda.html';
+    var disqus_title = 'Installation of Python, Spyder, Numpy, Sympy, Scipy, Pytest, Matplotlib via Anaconda (2016)';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = "//" + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+     })();
+  </script>
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+<iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;" src="./Installation of Python, Spyder, Numpy, Sympy, Scipy, Pytest, Matplotlib via Anaconda (2016) — Computational Science and Data Science_files/saved_resource(1).html"></iframe><div id="GOOGLE_INPUT_CHEXT_FLAG" input="" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}" style="display: none;"></div><iframe style="display: none;" src="./Installation of Python, Spyder, Numpy, Sympy, Scipy, Pytest, Matplotlib via Anaconda (2016) — Computational Science and Data Science_files/saved_resource(2).html"></iframe><iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Installation of Python, Spyder, Numpy, Sympy, Scipy, Pytest, Matplotlib via Anaconda (2016) — Computational Science and Data Science_files/widget_iframe.2e9f365dae390394eb8.html" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./Installation of Python, Spyder, Numpy, Sympy, Scipy, Pytest, Matplotlib via Anaconda (2016) — Computational Science and Data Science_files/saved_resource(3).html"></iframe></body></html>

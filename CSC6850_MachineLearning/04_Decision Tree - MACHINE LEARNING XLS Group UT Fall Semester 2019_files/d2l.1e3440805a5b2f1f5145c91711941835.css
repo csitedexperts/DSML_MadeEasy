@@ -1,0 +1,98 @@
+/* Generic components */
+
+.ally-aaf-link,
+.ally-scoreindicator-container .ally-scoreindicator {
+    padding: 5px 12px;
+    border-radius: 3px;
+    box-shadow: 0 0 0 4px rgba(0, 111, 191, 0);
+    border: solid 1px rgba(0, 111, 191, 0);
+    vertical-align: middle;
+}
+
+.ally-aaf-link img,
+.ally-scoreindicator img {
+    width: 120%;
+}
+
+.ally-aaf-link:active,
+.ally-aaf-link:focus,
+.ally-aaf-link:hover,
+.ally-scoreindicator-container .ally-scoreindicator:active,
+.ally-scoreindicator-container .ally-scoreindicator:focus,
+.ally-scoreindicator-container .ally-scoreindicator:hover {
+    background-color: #E6EAF0;
+    text-decoration: none;
+}
+
+.ally-aaf-link:focus,
+.ally-scoreindicator-container .ally-scoreindicator:focus {
+    box-shadow: 0 0 0 4px rgba(0, 111, 191, 0.3);
+    border: solid 1px rgba(0, 111, 191, 0.4);
+}
+
+.ally-tooltip {
+    /* The tooltip does not inherit the font in the new content experience, explicitly set one */
+    font-family: Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+/* Table of contents */
+
+.d2l-datalist .ally-d2l-toc-topic-view {
+    float: left;
+    max-width: calc(100% - 165px);
+    width: calc(100% - 165px);
+}
+
+.d2l-datalist.ally-d2l-toc-aafs-only .ally-d2l-toc-topic-view {
+    max-width: calc(100% - 120px);
+    width: calc(100% - 120px);
+}
+
+.d2l-datalist.ally-d2l-toc-with-draft .ally-d2l-toc-topic-view {
+    max-width: calc(100% - 260px);
+    width: calc(100% - 260px);
+}
+
+.ally-d2l-toc-column {
+    float: left;
+}
+
+.ally-d2l-toc-with-draft .ally-d2l-toc-row-with-draft .ally-d2l-toc-column {
+    align-items: center;
+    display: flex;
+    height: 54px;
+}
+
+.ally-toc-aaf-icon-launcher .ally-aaf-link {
+    font-size: 0.75em;
+}
+
+.ally-d2l-toc-column span[data-ally-scoreindicator] {
+    margin-left: 10px;
+}
+
+.ally-d2l-toc-column .ally-aaf-link[style="display: none"] + [data-ally-scoreindicator] {
+    margin-left: 53px;
+}
+
+@media (max-width: 500px) {
+    .ally-d2l-toc-column {
+        margin-left: 0;
+    }
+
+    .ally-d2l-toc-column span[data-ally-scoreindicator] {
+        margin-left: 0;
+    }
+}
+
+/* Content view page */
+
+.ally-d2l-button img {
+    margin-right: 0.5rem;
+}
+
+/* New Content Experience view */
+
+#app #root-wrapper .ally-container .ally-d2l-button {
+    margin-right: 10px;
+}

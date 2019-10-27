@@ -1,0 +1,16 @@
+.daylight #ContentNavigator .vui-list > li {
+	border-top-color: #cdd5dc; 
+	padding: 0 5px 0 5px;
+}
+
+.daylight #ContentNavigator .vui-list > li:last-child {
+	border-bottom: 1px solid #cdd5dc; 
+}
+
+.daylight #ContentNavigator .vui-list > .vui-selected {
+	background: #e3e9f1; 
+}
+
+.d2l-topic-view .d2l-contextmenu-ph-dropdown {
+	padding-top: 3px;
+}

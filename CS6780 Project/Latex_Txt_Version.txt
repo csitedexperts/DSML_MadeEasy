@@ -1,0 +1,135 @@
+01795 392471
+01712 847838
+
+
+\documentclass[conference]{IEEEtran}
+%=====PACKAGES=====
+\usepackage{amsmath,amssymb}		%To use math symbols
+\usepackage{graphicx}				%To include figures
+\usepackage[font=footnotesize]{caption}	%To specify the font of captions
+
+
+%=====SYMBOLS DEFINITIONS=====
+\def \R{\mathbb{R}}
+\def \X{\boldsymbol{\rm X}}
+\def \y{\boldsymbol{\rm y}}
+\def \bbeta{\boldsymbol{\beta}}
+\def \T{\mathsf{T}}
+\def \ep{\varepsilon}
+
+
+%=====DOCUMENT=====
+\begin{document}
+\title{Phenotype from Morphotype of Microbial Diversity & Pseudomonas Aeruginosa}
+\author{
+\IEEEauthorblockN{Fangsheng Wu, Mokter Houssain, Jonathan Pinder}
+\IEEEauthorblockA{\sc{CS 4780/6780 Final Project}}
+}
+\maketitle
+
+%=====ABSTRACT=====
+\begin{abstract}
+A serious issue in health today is the increasing resistance of microbes to antibiotics. We are seeking to investigate whether the physical appearance of microbes correlates in anyway with their tolerance to antibiotics. Our findings hope to further research into evolving medical practices to fight rapidly evolving microbes. This paper studies microbial resistance to carbenicillin and tobramycin.
+\end{abstract}
+
+
+
+%=====INTRODUCTION=====
+\section{Introduction}
+\label{secName}
+Bacteria are can be classified as Prokaryotic and Eukaryotik.Although these organisms are relatively small they have big impacts in our society. The phenotype of a bacteria tells us how the organism acts. In this paper phenotype will refer to the resistance to antibiotics \textbf{carbenicillin} and \textbf{tobramycin}. The morphotype we are referring to is the bacteria \textit{Pseudomonas aeruginosa}. Unfortunately this bacteria is opportunistic: disrupts mucous membrance/skin,affects cancer therapy and burn wound patients.
+\textit{Pseudomonas aeruginosa} is very diverse and is resistant to many of today's antibiotics.
+
+%====METHODOLOGY=====
+\section{Methodology}
+Our core methodlogy for this experiment was using a linear regression model. The following methodologies were used:
+\begin{itemize}
+\item
+Phenotypic Analyses
+\item
+Phenotype Classification
+\item
+Morphotype Recognition
+\item
+Model Training
+\item
+Testing
+\end{itemize}
+Once completed we will use K-Means to ascertain findings. K-Means will allow us to find patters in our analyses of the phenotype and test the validity of our model.
+
+%=====DATA=====
+\section{Data}
+The data used comes from a research Lab at Georgia Tech. Our data set consists of a variety of images, similar to Figure 1\ref{figName}.Along with a spread sheet with vectorized numerical values of the images.The spreadsheet's information helps to discern the important aspects and features and dismiss any "noisy" data we were given.
+\newline
+See Figure:
+\begin{figure}[h]
+\centering
+\includegraphics[width=4cm]{ResizedPIL-2_3dayLBCR-1.png}
+\caption{A sample of Pseudomonas aeruginosa }
+\label{figName}
+\end{figure}
+
+%=====METHODS=====
+\section{Methods}
+The methods used came from taking 10 random samples of Pseudomonas aeruginosa with different tolerances to offset any biases in our results. 
+\begin{itemize}
+    \item
+    Linear Regression: \y =\ \X\bbeta+\ep
+\end{itemize}
+The vector \y represented the carbenicillin/tobramycin resistances, and \X was the numerical representation of the images like \ref{figName}. In the linear regression model these images were resized to 64x64 due to large filesize.
+
+\begin{align}
+\label{eqName}
+\bbeta \ = \ (\X^\T\X)^{-1}\X^\T\y.
+\end{align}
+Here is how you reference equation \eqref{eqName}.
+
+
+
+%=====EXPERIMENTS=====
+\section{Experiments}
+Here you need to describe your experiments and present your results. Part of the deliverables will be an Excel file containing your predictions for {\em all} images in the dataset, which should look like Table \ref{tabDeliverable}.
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{| c || c | c |}
+\hline
+Image & Prediction 1 & Prediction 2 \\ \hline \hline
+PIL-1\_3dayLBCR-1 & 19 & 4 \\ \hline
+PIL-1\_3dayLBCR-2 & 19 & 4 \\ \hline
+\vdots & \vdots & \vdots \\ \hline
+PIL-373\_3dayLBCR-4 & 24 & 25 \\ \hline
+\end{tabular}
+\caption{Structure of deliverable Excel file.}
+\label{tabDeliverable}
+\end{center}
+\end{table}
+
+In addition, you should summarize your results in a table that looks like Table \ref{tabSummary}.
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{| c || c | c |}
+\hline
+Method & Antibiotic 1 & Antibiotic 2 \\ \hline \hline
+Linear Regression & \textbf{0.12} & 0.18 \\ \hline
+Neural Network & 0.16 & \textbf{0.13} \\ \hline
+Random Forests & 0.14 & 0.17 \\ \hline
+\end{tabular}
+\caption{Predictions Root Mean Squared Error.}
+\label{tabSummary}
+\end{center}
+\end{table}
+
+
+%=====CONCLUSIONS=====
+\section{Conclusions}
+The approach used here only feeds 10 images at a time, the output prediction is very 
+
+%=====REFERENCES=====
+\begin{thebibliography}{1}
+
+\bibitem{paperName}
+D.~Pimentel-Alarc\'on, N.~Boston and R.~Nowak, \emph{Deterministic conditions for subspace identifiability from incomplete sampling}, International Symposium on Information Theory, 2014.
+
+\end{thebibliography}
+
+\end{document}
